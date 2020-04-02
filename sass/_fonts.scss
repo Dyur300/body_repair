@@ -17,9 +17,21 @@ font-style: normal;
   font-weight: normal;
   font-style: normal;
   }
-@mixin regular {
-  font-family: 'Lato-Regular' sans-serif;
+@mixin latoregular {
+  font-family: 'Lato-Regular', sans-serif;
 }
-@mixin bold {
-  font-family: 'Lato-Bold' sans-serif;
+@mixin latobold {
+  font-family: 'Lato-Bold', sans-serif;
+}
+@mixin openregular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+@mixin openbold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+@mixin opensemibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }

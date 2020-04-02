@@ -1,4 +1,117 @@
+@font-face {
+  font-family: 'Lato Regular';
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
-  max-width: 1145px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.header {
+  position: relative;
+  background: url("../img/header/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  min-height: 792px;
+}
+
+.header__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.85;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__call-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.navbar__num {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar__call-back {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #d91233;
+}
+
+.logo {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .navbar-wrap {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbar__num {
+    font-size: 23px;
+  }
+  .navbar__call-back {
+    font-size: 13px;
+  }
+  .navbar__logo {
+    max-width: 87px;
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=style.css.map */
