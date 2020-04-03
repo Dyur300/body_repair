@@ -1,0 +1,86 @@
+.hero
+  position: relative
+  z-index: 1
+  padding: 130px 0 90px 0
+  &__title 
+    +openregular
+    text-align: center
+    line-height: 50px
+  &__strong
+    font-size: 48px
+    text-transform: uppercase
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 630px
+    margin: 100px auto
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+  &__text
+    margin-top: 40px
+    font-size: 18px;
+  &__icon
+    height: 50px
+  &__btns-box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 525px
+    margin: 0 auto
+    
+  &__remark
+    display: block
+    +openregular
+    font-size: 14px;
+    text-align: center
+    margin-top: 20px
+.red-button
+  &__hero:hover
+    background: transparent
+    border: 1px solid #d91233
+@media(max-width: 768px)
+  .hero
+    padding: 50px 0 50px 0
+    &__title 
+      line-height: 40px
+    &__strong
+      font-size: 34px
+@media(max-width: 600px)
+  .hero
+    padding: 50px 0 10px 0
+    &__title 
+      line-height: 40px
+      text-align: left
+      font-size: 23px
+      br
+        display: none
+    &__strong
+      font-size: 28px
+    &__row
+      flex-direction: column
+      margin: 80px auto 20px auto
+    &__item
+      margin-bottom: 50px
+    &__btn-wrap
+      margin: 0 auto 50px auto
+  .red-button
+    &__hero
+      font-size: 14px;
+      min-width: 200px
+      margin: 0 auto
+      justify-content: center
+    
+@media(max-width: 480px)
+  .hero
+    &__btns-box
+      flex-direction: column
+    &__title 
+      font-size: 20px
+    &__strong
+      font-size: 25px
+    &__text
+      font-size: 16px;
