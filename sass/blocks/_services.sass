@@ -1,0 +1,29 @@
+.services
+  padding-bottom: 0px
+  &-wrap
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 85px
+    padding: 0 40px
+    &-icon 
+    &-title
+      +openbold
+      font-size: 16px;
+      text-align: center
+      margin-top: 30px
+    &-text
+      +openregular
+      font-size: 14px
+      text-align: center
+      max-width: 230px
+      line-height: 20px
+@media(max-width: 480px)
+  .services
+    &__item
+      margin-bottom: 55px
+      padding: 0 0
