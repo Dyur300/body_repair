@@ -578,4 +578,50 @@ body {
     margin-top: 10px;
   }
 }
+
+.car-brands__title {
+  margin-bottom: 80px;
+}
+
+.car-brands-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.car-brands__item {
+  padding: 0 20px 30px 20px;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+}
+
+@media (max-width: 480px) and (min-width: 300px) {
+  .car-brands__title {
+    margin-bottom: 50px;
+  }
+  .car-brands-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .car-brands__item {
+    padding: 0 20px 30px 20px;
+    -ms-flex-preferred-size: 43%;
+        flex-basis: 43%;
+  }
+  .car-brands__image {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
