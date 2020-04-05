@@ -1,0 +1,39 @@
+.yandex-map
+  position: relative
+.contact-card
+  position: absolute
+  left: 50%
+  top: 30px
+  transform: translate( -50%, 0)
+  z-index: 1
+  color: #fff
+  width: 300px
+  background-color: #d91233
+  font-size: 16px
+  text-align: center
+  padding: 20px 0
+  &__title
+    +opensemibold
+    font-size: 20px
+    margin-top: 0
+  &__adress
+    margin-bottom: 15px
+  &__tel
+    display: block
+    color: #fff
+    margin-bottom: 15px
+  &__mail
+    display: block
+    color: #fff
+@media(max-width: 480px)
+  .contact-card
+    position: relative
+    width: 100%
+    top: 0
+    &__title
+      font-size: 18px
+    &__adress
+      margin-bottom: 10px
+    &__tel
+      margin-bottom: 10px
+     
