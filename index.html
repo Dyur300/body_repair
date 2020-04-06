@@ -23,7 +23,7 @@
           <div class="navbar__call-block call-block">
             <a href="tel:+7800232321" class="navbar__num call-num">8 800 232 32 12</a>
             <!-- /.header__num -->
-            <a href="" class="navbar__call-back call-back">Заказать обратный звонок</a>
+            <a href="#" class="navbar__call-back call-back">Заказать обратный звонок</a>
             <!-- /.header__call-back -->
           </div>
           <!-- /.header__call-block -->
@@ -37,7 +37,7 @@
         <h1 class="hero__title"><strong class="hero__strong">Продажа кузовных запчастей</strong>
           <br> с заводской покраской без пробега по РФ</h1>
         <!-- /.hero__title -->
-        <div class="hero__row">       
+        <div class="hero__row">
           <div class="hero__item">
             <img src="img/header/hero/icon-1.png" alt="" class="hero__icon">
             <span class="hero__text">Доставка по РФ<br> от 3-х дней</span>
@@ -58,7 +58,7 @@
         <!-- /.hero__row -->
         <div class="hero__btns-box">
           <div class="hero__btn-wrap">
-            <button class="red-button red-button__hero">Быстрая заявка</button>
+            <button class="red-button red-button__hero fast-request">Быстрая заявка</button>
             <!-- /.red-button -->
             <span class="hero__remark">Мы перезвоним Вам<br>
               для уточнения деталей.</span>
@@ -66,7 +66,7 @@
           </div>
           <!-- /.hero__btn-wrap -->
           <div class="hero__btn-wrap">
-            <button class="red-button red-button__hero">Подробная заявка</button>
+            <button class="red-button red-button__hero detail-request" id="detail-request-btn">Подробная заявка</button>
             <!-- /.red-button -->
             <span class="hero__remark">Заполните подробную<br>
               заявку онлайн!</span>
@@ -97,7 +97,8 @@
             <img src="img/services/icon-2.png" alt="" class="services__item-icon">
             <h3 class="services__item-title">Доставка в любой регион РФ</h3>
             <!-- /.services__item-title -->
-            <div class="services__item-text">Мы работаем с любой транспортной компанией и осуществляем доставку в любой регион РФ</div>
+            <div class="services__item-text">Мы работаем с любой транспортной компанией и осуществляем доставку в любой
+              регион РФ</div>
             <!-- /.services__item-text -->
           </div>
           <!-- /.services__item -->
@@ -113,7 +114,8 @@
             <img src="img/services/icon-4.png" alt="" class="services__item-icon">
             <h3 class="services__item-title">Европейское качество</h3>
             <!-- /.services__item-title -->
-            <div class="services__item-text">Все наши детали привезены из Европы, что гарантирует отличное качество</div>
+            <div class="services__item-text">Все наши детали привезены из Европы, что гарантирует отличное качество
+            </div>
             <!-- /.services__item-text -->
           </div>
           <!-- /.services__item -->
@@ -121,7 +123,8 @@
             <img src="img/services/icon-5.png" alt="" class="services__item-icon">
             <h3 class="services__item-title">Работаем по договору</h3>
             <!-- /.services__item-title -->
-            <div class="services__item-text">Все, что мы делаем - официально. Мы заключаем договор купли-продажи и предоставляем все необходимые документы</div>
+            <div class="services__item-text">Все, что мы делаем - официально. Мы заключаем договор купли-продажи и
+              предоставляем все необходимые документы</div>
             <!-- /.services__item-text -->
           </div>
           <!-- /.services__item -->
@@ -129,7 +132,7 @@
         <!-- /.services-wrap -->
       </div>
     </section>
-    <section class="section request">
+    <section class="section request" id="detail-request">
       <div class="container">
         <h2 class="title request__title">Подробная заявка</h2>
         <!-- /.title request__title -->
@@ -139,34 +142,34 @@
           <div class="request__row">
             <div class="request__column">
               <div class="request__group">
-                <label for="select-brand" class="request__label">Марка:</label> 
+                <label for="select-brand" class="request__label">Марка:</label>
                 <!-- /.request__label -->
                 <div class="request__select-box">
                   <select name="select-brand" id="select-brand" class="form-item request__select">
                     <option value="select-brand">Выберите марку</option>
-                  </select> 
+                  </select>
                 </div>
                 <!-- /#.request__select -->
               </div>
               <!-- /.request__group -->
               <div class="request__group">
-                <label for="select-model" class="request__label">Модель:</label> 
+                <label for="select-model" class="request__label">Модель:</label>
                 <!-- /.request__label -->
                 <div class="request__select-box">
                   <select name="select-model" id="select-model" class="form-item request__select">
                     <option value="select-model">Выберете модель</option>
-                  </select> 
+                  </select>
                 </div>
                 <!-- /#.request__select -->
               </div>
               <!-- /.request__group -->
               <div class="request__group">
-                <label for="select-year" class="request__label">Год выпуска:</label> 
+                <label for="select-year" class="request__label">Год выпуска:</label>
                 <!-- /.request__label -->
                 <div class="request__select-box">
                   <select name="select-year" id="select-year" class="form-item request__select">
                     <option value="select-year">Выберете год</option>
-                  </select> 
+                  </select>
                 </div>
                 <!-- /#.request__select -->
               </div>
@@ -175,34 +178,38 @@
             <!-- /.request__column -->
             <div class="request__column">
               <div class="request__group">
-                <label for="partsofcar" class="request__label">Необходимые детали:</label> 
+                <label for="partsofcar" class="request__label">Необходимые детали:</label>
                 <!-- /.request__label -->
-                <textarea name="partsofcar" id="partsofcar" class="form-item request__partsofcar" placeholder="Введите"></textarea> 
+                <textarea name="partsofcar" id="partsofcar" class="form-item request__partsofcar"
+                  placeholder="Введите"></textarea>
                 <!-- /#.request__partsofcar -->
               </div>
               <!-- /.request__group -->
               <div class="request__group">
-                <label for="name" class="request__label">Ваше имя:</label> 
+                <label for="name" class="request__label">Ваше имя:</label>
                 <!-- /.request__label -->
-                <input id="name" name="name" type="text" class="form-item request-input request__input-name" placeholder="Введите">
+                <input id="name" name="name" type="text" class="form-item request-input request__input-name"
+                  placeholder="Введите">
               </div>
               <!-- /.request__group -->
             </div>
             <!-- /.request__column -->
             <div class="request__column">
               <div class="request__group">
-                <label for="num" class="request__label">Ваш телефон:</label> 
+                <label for="num" class="request__label">Ваш телефон:</label>
                 <!-- /.request__label -->
-                <input id="num" name="num" type="tel" class="form-item request-input request__input-num" placeholder="Введите">
+                <input id="num" name="num" type="tel" class="form-item request-input request__input-num"
+                  placeholder="Введите">
               </div>
               <!-- /.request__group -->
               <div class="request__group">
-                <label for="email" class="request__label">Ваш e-mail:</label> 
+                <label for="email" class="request__label">Ваш e-mail:</label>
                 <!-- /.request__label -->
-                <input id="email" name="e-mail" type="email" class="form-item request-input request__input-email" placeholder="Введите">
+                <input id="email" name="e-mail" type="email" class="form-item request-input request__input-email"
+                  placeholder="Введите">
               </div>
               <!-- /.request__group -->
-              <button class="red-button request-btn">Узнать цену</button>
+              <input type="button" class="red-button request-btn request-submit-btn" value="Узнать цену">
               <!-- /.red-button -->
             </div>
             <!-- /.request__column -->
@@ -267,7 +274,7 @@
         <h2 class="title work-video__title">Вы можете посмотреть что происходит у нас!</h2>
         <!-- /.title work-video__title -->
         <div class="work-video-wrap">
-          <video src="" preload="metadata"  width="100%" controls></video>
+          <video src="" preload="metadata" width="100%" controls></video>
         </div>
       </div>
       <!-- /.container -->
@@ -279,14 +286,17 @@
         <!-- /.title reviews__title -->
         <div class="reviews-slider">
           <div class="reviews-slider__item">
-            <div class="reviews-slider__image-box"><img src="img/reviews/reviews-image.png" alt="" class="reviews-slider__image"></div>
+            <div class="reviews-slider__image-box"><img src="img/reviews/reviews-image.png" alt=""
+                class="reviews-slider__image"></div>
             <!-- /.reviews-slider__image-box -->
             <div class="reviews-slider__body">
               <div class="reviews-slider__name">Иван Иванович</div>
               <!-- /.reviews-slider__name -->
               <h3 class="reviews-slider__title">Не могу найти фару для авто</h3>
               <!-- /.reviews-slider__title -->
-              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.
+              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного
+                дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей,
+                благодаря высокому сервису, скидкам, отличному качеству продукции.
               </div>
               <!-- /.reviews-slider__text -->
             </div>
@@ -303,7 +313,9 @@
               <!-- /.reviews-slider__name -->
               <h3 class="reviews-slider__title">Не могу найти фару для авто</h3>
               <!-- /.reviews-slider__title -->
-              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.
+              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного
+                дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей,
+                благодаря высокому сервису, скидкам, отличному качеству продукции.
               </div>
               <!-- /.reviews-slider__text -->
             </div>
@@ -320,7 +332,9 @@
               <!-- /.reviews-slider__name -->
               <h3 class="reviews-slider__title">Не могу найти фару для авто</h3>
               <!-- /.reviews-slider__title -->
-              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.
+              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного
+                дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей,
+                благодаря высокому сервису, скидкам, отличному качеству продукции.
               </div>
               <!-- /.reviews-slider__text -->
             </div>
@@ -337,7 +351,9 @@
               <!-- /.reviews-slider__name -->
               <h3 class="reviews-slider__title">Не могу найти фару для авто</h3>
               <!-- /.reviews-slider__title -->
-              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.
+              <div class="reviews-slider__text">“ Мотордеталь в широком ассортименте по ценам от известного
+                дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей,
+                благодаря высокому сервису, скидкам, отличному качеству продукции.
               </div>
               <!-- /.reviews-slider__text -->
             </div>
@@ -359,13 +375,13 @@
         <form action="" class="form advice__form">
           <div class="advice__row">
             <div class="advice__group">
-              <label for="" class="advice__label">Ваше имя:</label> 
+              <label for="" class="advice__label">Ваше имя:</label>
               <!-- /.addvice__label -->
               <input type="text" class="input advice__input-name">
             </div>
             <!-- /.advice__group -->
             <div class="advice__group">
-              <label for="" class="advice__label">Ваше имя:</label> 
+              <label for="" class="advice__label">Ваше имя:</label>
               <!-- /.addvice__label -->
               <input type="text" class="input advice__input-name">
             </div>
@@ -373,7 +389,7 @@
           </div>
           <!-- /.advice__row -->
           <div class="advice__btn-box">
-            <input type="submit" class="red-button red-button__advice" value="Заказать консультацию">
+            <input type="button" class="red-button red-button__advice request-submit-btn" value="Заказать консультацию">
           </div>
         </form>
         <!-- /.form advice__form -->
@@ -388,8 +404,10 @@
         <a href="tel:+78001234334" class="contact-card__tel">8 800 123 43 34</a>
         <a href="#" class="contact-card__mail">info@sitename.ru</a>
       </div>
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa70f75f179643881b5cea348b1bb6d761aae92d39024c94849fcf9e2b4aa7ae7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-    </div>   
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa70f75f179643881b5cea348b1bb6d761aae92d39024c94849fcf9e2b4aa7ae7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false">
+      </script>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -406,8 +424,70 @@
       <!-- /.footer-wrap -->
     </div>
     <!-- /.container -->
-  </footer> 
+  </footer>
   <!-- /.footer -->
+  <div class="request-thanks window">
+    <button class="window-close-btn">
+      <i class="fa fa-times"></i>
+    </button>
+    <div class="request-thanks-box window-box">
+      <h4 class="window-title">Спасибо за вашу заявку!</h4>
+      <!-- /.request-thanks__title -->
+      <div class="window-subtitle">Мы свяжемся с вами в ближайшее время.</div>
+      <!-- /.request-thanks__text -->
+    </div>
+  </div>
+
+  <!-- /.popup-bg -->
+  <div class="window back-call-form">
+    <button class="window-close-btn">
+      <i class="fa fa-times"></i>
+    </button>
+    <form class="window-box back-call-form-box">
+      <h4 class="window-title">Спасибо за вашу заявку!</h4>
+      <!-- /.request-thanks__title -->
+      <div class="window-subtitle">Мы свяжемся с вами в ближайшее время.</div>
+      <!-- /.request-thanks__text -->
+      <div class="window-input-box">
+        <i class="fa fa-user window-input-icon"></i>
+        <input type="text" id="name" class="window-input" placeholder="Ваше имя">
+      </div>
+      <div class="window-input-box">
+        <i class="fa fa-phone window-input-icon"></i>
+        <input type="tel" id="tel" class="window-input" placeholder="Ваш телефон">
+      </div>
+      <div class="window-input-box">
+        <i class="fa fa-envelope-o window-input-icon"></i>
+        <input type="email" id="email" class="window-input" placeholder="Ваша почта">
+      </div>
+      <input type="button" class="red-button red-button__window request-submit-btn" value="Отправить заявку">
+      <!-- /.red-button -->
+    </form>
+  </div>
+
+  <div class="window fast-request-window">
+    <button class="window-close-btn">
+      <i class="fa fa-times"></i>
+    </button>
+    <form class="window-box fast-request-box">
+      <h4 class="window-title">Быстрая заявка</h4>
+      <!-- /.request-thanks__title -->
+      <div class="window-subtitle">Оставте заявку и мы вам перезвоним</div>
+      <div class="window-input-box">
+        <i class="fa fa-user window-input-icon"></i>
+        <input type="text" id="name" class="window-input" placeholder="Ваше имя">
+      </div>
+      <div class="window-input-box">
+        <i class="fa fa-phone window-input-icon"></i>
+        <input type="tel" id="tel" class="window-input" placeholder="Ваш телефон">
+      </div>
+      <input type="button" class="red-button red-button__window request-submit-btn" value="Отправить заявку">
+    </form>
+    <!-- /.window fast-request-window -->
+  </div>
+  <div class="popup-bg"></div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -49,6 +49,12 @@ body {
   border: none;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
+  outline: none;
+}
+
+.red-button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .section {
@@ -860,6 +866,7 @@ body {
 
 .yandex-map {
   position: relative;
+  min-height: 200px;
 }
 
 .contact-card {
@@ -935,5 +942,160 @@ body {
 
 .footer__call-num {
   color: #000;
+}
+
+.test-window {
+  background-color: #000;
+}
+
+.window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 350px;
+}
+
+.window-box {
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.window-close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  font-size: 30px;
+  border: none;
+  color: #d91233;
+  padding: 0;
+  margin-left: 5px;
+  margin-top: -5px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: .1s all ease;
+  transition: .1s all ease;
+}
+
+.window-close-btn:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.window-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.window-subtitle {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.window-input {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 0 15px;
+}
+
+.window-input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.window-input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.window-input::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.window-input::placeholder {
+  font-size: 12px;
+}
+
+.window-input-box {
+  position: relative;
+}
+
+.window-input-icon {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+  .red-button__window {
+    font-size: 14px;
+    min-width: 100%;
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .window {
+    position: relative;
+    max-width: 80%;
+  }
+  .window-box {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .window-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.window {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: auto;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.window.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #00000080;
+  display: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.popup-bg.active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
