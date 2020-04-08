@@ -570,6 +570,7 @@ body {
 .reviews {
   background-color: #f3f1f1;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .reviews-slider {
@@ -578,22 +579,26 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 -20px;
   padding-top: 60px;
+  min-width: 0;
+  position: relative;
 }
 
 .reviews-slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 44%;
-          flex: 0 0 44%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 55px;
   padding: 0 20px;
+  max-width: 420px;
 }
 
 .reviews-slider__image-box {
@@ -637,36 +642,14 @@ body {
   max-width: 325px;
 }
 
-@media (max-width: 768px) {
-  .reviews-slider {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 0;
-  }
+@media (max-width: 830px) {
   .reviews-slider__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 435px;
-            flex: 0 1 435px;
-    margin: 0 auto 55px auto;
-    padding: 0 0;
+    max-width: 385px;
   }
 }
 
-@media (max-width: 480px) {
-  .reviews-slider {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 0;
-  }
+@media (max-width: 768px) {
   .reviews-slider__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -674,19 +657,109 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-    margin: 0 auto 50px auto;
-    padding: 0 0;
     text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
   }
   .reviews-slider__image-box {
     margin-bottom: 20px;
   }
-  .reviews-slider__body {
-    padding: 0;
+}
+
+@media (max-width: 650px) {
+  .reviews-slider__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    max-width: 500px;
   }
+  .reviews-slider__text {
+    max-width: 100%;
+  }
+  .reviews-slider__body {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.reviews-slider .slick-list {
+  overflow: hidden;
+}
+
+.reviews-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews-slider .slick-arrow {
+  position: absolute;
+  top: 43%;
+  z-index: 1;
+  font-size: 0;
+  width: 40px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  opacity: 0.4;
+}
+
+.reviews-slider .slick-arrow:focus {
+  outline: none;
+}
+
+.reviews-slider .slick-arrow:hover {
+  opacity: 1;
+}
+
+.reviews-slider .slick-arrow.slick-prev {
+  background-image: url("../img/reviews/left.png");
+  background-position-y: center;
+  left: 0;
+}
+
+.reviews-slider .slick-arrow.slick-next {
+  background-image: url("../img/reviews/right.png");
+  background-position-x: 4px;
+  background-position-y: center;
+  right: 0;
+}
+
+.reviews-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.reviews-slider .slick-dots li {
+  list-style: none;
+  margin: 0 3px;
+}
+
+.reviews-slider .slick-dots li.slick-active button {
+  background-color: #d91233;
+}
+
+.reviews-slider .slick-dots button {
+  font-size: 0;
+  height: 12px;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+  border: none;
 }
 
 .advice {
@@ -942,6 +1015,16 @@ body {
 
 .footer__call-num {
   color: #000;
+}
+
+.footer__call-back {
+  background-color: transparent;
+  text-decoration: underline;
+  border: none;
+}
+
+.footer__call-back:focus {
+  outline: none;
 }
 
 .test-window {

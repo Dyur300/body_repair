@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.navbar__call-back').click(function(event){
+  $('.call-back', this).click(function(event){
     $('.back-call-form').css({'top': $(window).scrollTop() +100}).addClass('active');
     $('.request-thanks').removeClass('active');
     $('.popup-bg').addClass('active');
@@ -29,4 +29,44 @@ $(document).ready(function(){
   $(window).scroll(function(){
     $('.window').css({'top': $(window).scrollTop() +100});
   }).scroll();
+});
+
+$(document).ready(function(){
+
+  var win = $(this); //this = window
+  $(function(){
+  fnName();
+  window.onresize = fnName;
+  });   
+  function fnName(){
+  if (win.width() <= 768) {
+    $('.reviews-slider').slick({
+      arrows: true,
+      dots: true,
+      slidesToShow: 2,
+      adaptiveHeight: true,
+      variableWidth: true,
+      centerMode: true,
+      responsive: [
+        {
+            breakpoint: 550,
+            settings: {
+              variableWidth: false,
+              slidesToShow: 1,
+            },
+
+      }, {
+      breakpoint: 400,
+      settings: {
+        variableWidth: false,
+        slidesToShow: 1,
+        centerMode: false,
+      }
+    }
+    ],
+    });
+      }
+  }
+  
+
 });
