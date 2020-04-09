@@ -57,6 +57,10 @@ body {
           transform: scale(0.9);
 }
 
+.red-button:hover {
+  cursor: pointer;
+}
+
 .section {
   padding: 80px 0;
 }
@@ -937,8 +941,11 @@ body {
   }
 }
 
-.yandex-map {
+.map-box {
   position: relative;
+}
+
+.yandex-map {
   min-height: 200px;
 }
 
@@ -1025,6 +1032,10 @@ body {
 
 .footer__call-back:focus {
   outline: none;
+}
+
+.footer__call-back:hover {
+  cursor: pointer;
 }
 
 .test-window {
